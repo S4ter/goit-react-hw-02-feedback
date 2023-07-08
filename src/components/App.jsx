@@ -57,7 +57,7 @@ export class Feedback extends Component {
   render() {
     return (
       <div>
-        <Section title="Please leave feedback">
+        <Section variant="section" title="Please leave feedback">
           <FeedbackOptions
             options={options}
             onLeaveFeedback={[
@@ -66,7 +66,7 @@ export class Feedback extends Component {
               this.handleAddBadReview,
             ]}
           />
-          <h1>Statistics</h1>
+          <h2>Statistics</h2>
           {this.state.total === 0 ? (
             <Notification variant="notification">
               There is no feedback

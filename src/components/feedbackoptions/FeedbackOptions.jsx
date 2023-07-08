@@ -15,6 +15,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
   <StatsLabel variant="label">
     {options.map((element, index) => (
       <Button
+        variant="button"
         key={'i' + index}
         text={element}
         handle={onLeaveFeedback[index]}
